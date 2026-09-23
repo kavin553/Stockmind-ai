@@ -29,7 +29,10 @@ class Settings(BaseSettings):
     sql_echo: bool = False
 
     # Local demo auth
-    secret_key: str = "stockmind-demo-secret-change-me"
+    secret_key: str = Field(
+    default="",
+    alias="SECRET_KEY",
+)
     token_ttl_minutes: int = 720
 
     cors_origins: str = "http://localhost:3000"
