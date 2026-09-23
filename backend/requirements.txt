@@ -1,0 +1,16 @@
+fastapi==0.141.1
+uvicorn[standard]==0.34.0
+pydantic==2.11.7
+pydantic-settings==2.7.1
+SQLAlchemy==2.0.54
+alembic==1.14.0
+psycopg[binary]==3.2.3
+python-multipart==0.0.20
+# Auth uses the standard library only (PBKDF2-HMAC + HMAC-signed tokens) so the demo
+# authentication layer has no third-party dependency.
+pandas==2.2.3
+numpy==2.2.1
+scikit-learn==1.6.0
+xgboost==3.0.2
+pytest==8.3.4
+httpx==0.28.1

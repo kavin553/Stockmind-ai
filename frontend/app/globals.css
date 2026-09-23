@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-base-900 text-slate-200 antialiased;
+  background-image:
+    radial-gradient(1200px 600px at 15% -10%, rgba(79, 172, 254, 0.08), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(0, 242, 254, 0.06), transparent 55%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(0, 242, 254, 0.25);
+}
+
+/* Slim, dark scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293f;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3a56;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-base-600/70 bg-base-800/70 backdrop-blur-sm;
+  }
+  .panel-hover {
+    @apply transition-colors hover:border-accent-cyan/40 hover:bg-base-700/60;
+  }
+  .label-caps {
+    @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-500;
+  }
+  .stat-value {
+    @apply font-mono text-2xl font-semibold text-slate-50 tabular-nums;
+  }
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-cyan/60 focus-visible:ring-offset-2 focus-visible:ring-offset-base-900;
+  }
+}

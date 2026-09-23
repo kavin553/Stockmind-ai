@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+.env.local
+.env*.local
+
+# Test artefacts
+playwright-report/
+test-results/
+coverage/
+
+# Databases / logs
+*.db
+*.sqlite3
+*.log
+
+# Tooling scratch (the sandbox mount cannot delete files, so these are ignored instead)
+pytest-cache-files-*/
+sedy*

@@ -1,0 +1,4 @@
+sku,store_code,quantity,first_received_at,last_sold_at,location_code
+SKU-1000,STR-BLR-01,120,2024-06-01,2024-09-15,R1-S1
+SKU-1001,STR-BLR-02,14,2024-08-20,2024-11-02,R2-S3
+SKU-1002,STR-HYD-01,220,2024-05-10,2024-08-30,R3-S1
